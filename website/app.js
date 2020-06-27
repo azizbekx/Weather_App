@@ -1,7 +1,7 @@
 /* Global Variables */
 
 let mainURL = "api.openweathermap.org/data/2.5/weather";
-let keyAPI = "95b3c895ad7285dc476b6121aa5332f2";
+let keyAPI = "&appid=95b3c895ad7285dc476b6121aa5332f2&units=imperial";
 const zipCode = document.getElementById("generate");
 const postURL = "http://localhost:8000/addWeatherData";
 const getURL = "http://localhost:8000/all";
@@ -55,7 +55,7 @@ const performAction = async(url = '', data = {})=> {
 /* Function to GET Web API Data*/
 
 const getWeather = async (mainURL, zipCode, keyAPI) => {
-  const fullURL = `http://${mainURL}?zip=${zipCode}&appid=${keyAPI}`;
+  const fullURL = `http://${mainURL}?zip=${zipCode}${keyAPI}`;
 
   const response = await fetch(fullURL);
   let jsonResponse = await response.json();
