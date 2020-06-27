@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Journal app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="bg-video">
+            <video id="bg__video" class="bg-video__content" autoplay muted loop>
+                <!-- <source src="/website/videos/rain.mp4" type="video/mp4"> -->
+                Your browser not supported!
+            </video>
+
+
+        </div>
+        <section class="main__section">
+
+            <h1 id="header" class="header-text"> Weather </h1>
+
+<!-- *******ENTER FIELD***** -->
+            <div class="enter__zip">
+                <label for="zip">Enter your city zip code </label>
+                <input class="zip-code" type="number" id="zip" placeholder="12345" required>
+            </div>
+
+            <div class="enter__text">
+                <label for="text">Have you feeling today?</label>
+                <textarea id="text" cols="30" rows="2" placeholder="any text here"></textarea>
+            </div>
+
+            <div class="generate__button">
+                <button id="getButton" class="generate btn">Generate</button>
+            </div>
+
+<!-- *********WEATHER DISPLAY********** -->
+            <div id="weather__display">
+
+                <div id="city">
+                    <h3 id="city-name">------------ <sup id="sup-city">--</sup></h3>
+                    <div id="day-night">
+                        
+                    </div>
+                </div>
+
+                <div id="icon-temp">
+
+                    <div class="icon-description">
+                        <div id="w-icon">
+                            <img src="/website/icons/unknown.png" alt="">
+                        </div>
+                        <div id="description">
+                            <p>------</p>
+                        </div>
+                    </div>
+<!-- TEMPERATURE -->
+                    <div id="temp">
+                        <p>--<sup class="sup-temp">℃</sup></p>
+
+                    </div>
+
+
+                </div>
+<!-- USER FEELINGS -->
+                <div id="fact">
+                    <img src="/website/icons/user.svg" alt="">
+                    <p id="user-fact">-------</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="app.js" type="text/javascript"></script>
+
+</body>
+
+</html>

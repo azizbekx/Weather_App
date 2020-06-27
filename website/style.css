@@ -1,0 +1,357 @@
+/* -------Typografiy------ */
+
+@font-face {
+  font-family: "SourceSanc-Bold";
+  src: url(/website/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf);
+}
+@font-face {
+  font-family: "SourceSanc-Regular";
+  src: url(/website/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+}
+@font-face {
+  font-family: "SourceSanc-Italic";
+  src: url(/website/fonts/Source_Sans_Pro/SourceSansPro-Italic.ttf);
+}
+@font-face {
+  font-family: "SourceSanc-ItalicBold";
+  src: url(/website/fonts/Source_Sans_Pro/SourceSansPro-SemiBoldItalic.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "SourceSanc-Bold", sans-serif !important;
+}
+p,
+a {
+  font-family: "SourceSanc-Regular", sans-serif !important;
+}
+i {
+ font-family: "SourceSanc-Italic", sans-serif !important;
+}
+ *{
+    font-size: 20px;
+  }
+body {
+  font-family: "SourceSanc-Regular", sans-serif !important;
+ 
+  box-sizing: border-box;
+}
+input {
+  font-family: "SourceSancRegular";
+ 
+  
+}
+label {
+  margin-bottom: 5px;
+}
+input:active, input:focus, 
+textarea:active, textarea:focus {
+  border: 1px solid rgb(39, 36, 243);
+}
+/* Style for Placeholder Text*/
+::placeholder {
+  /* Firefox, Chrome, Opera */
+
+  font-family: "SourceSanc-Regular", sans-serif;
+  color: rgb(168, 167, 167);
+  
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+
+  font-family: "SourceSanc-Regular", sans-serif;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+
+  font-family: "SourceSanc-Regular", sans-serif;
+}
+.main__section {
+  width: 35%;
+  height: auto;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+
+  background: linear-gradient(300deg, #83a3d4f1 20%, #b6fbffed 100%);
+}
+.header-text {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+/* INPUT STYLES */
+.enter__zip {
+  margin: 0 auto 1rem auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.enter__text {
+  display: flex;
+  flex-direction: column;
+}
+.zip-code {
+  outline: none;
+  padding: 10px 14px;
+  border-radius: 4px;
+  border: none;
+}
+textarea {
+  border-radius: 8px;
+  max-width: ;
+  min-width: ;
+  border: none;
+  padding: 1rem;
+  outline: none;
+}
+.bg-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  background-image: url(/website/videos/default.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-video__content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Button */
+.btn {
+  font-family: "SourceSanc-Bold";
+  align-self: center;
+  padding: 7px 14px;
+  background: #4d97ff;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 4px solid rgb(31, 53, 251);
+  transition: background 0.2s linear;
+}
+.btn:hover {
+  background: rgb(53, 94, 231);
+
+  
+}
+.btn:focus, .btn:active {
+  border-top: 1px solid rgb(31, 53, 251);
+  border-bottom: 2px solid  rgb(31, 53, 251); 
+}
+
+.generate__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+/* ---weather-display---- */
+#weather__display {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  padding: 15px;
+}
+
+#weather__display p,
+h3 {
+  margin: 0;
+}
+#city {
+  margin-left: 10px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+#city {
+  font-size: 20px;
+}
+#sup-city {
+  background-color: #ffc935;
+  font-size: 0.9rem !important;
+  padding: 0 5px ;
+  border-radius: 8px;
+}
+#icon-temp {
+  display: flex;
+  align-items: center;
+  
+}
+.icon-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#w-icon {
+  margin: 10px;
+  margin-right: 1rem;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  
+}
+
+#w-icon img {
+  width: 80px;
+  height: 80px;
+}
+#temp p {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 3rem;
+ 
+}
+#temp .sup-temp {
+  font-size: 20px;
+  
+}
+#description{
+  font-weight: bolder;
+  
+}
+#day-night {
+  width: 25px;
+  height: 25px;
+}
+#day-night img{
+  width: 25px;
+  height: 25px;
+}
+#fact {
+  margin: 10px 0 0 0;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  border-top: 0.5px solid #333;
+
+}
+#fact img {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+@media (max-width: 900px) {
+  *{
+    font-size: 16px;
+  }
+  
+  .main__section {
+    width: 70%;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+  }
+  .header-text {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  /* INPUT STYLES */
+  .enter__zip {
+    margin: 0 auto 1rem auto;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .enter__text {
+    display: flex;
+    flex-direction: column;
+  }
+  .zip-code {
+    outline: none;
+    padding: 10px 14px;
+    border-radius: 4px;
+    border: none;
+  }
+  label {
+    margin-bottom: 2px;
+  }
+  textarea {
+    border-radius: 4px;
+    padding: 10px;
+  }
+  .bg-video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .bg-video__content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Button */
+  .btn {
+    font-size: 16px;
+  }
+
+  /* ---weather-display---- */
+  #weather__display {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    padding: 15px;
+  }
+  #city {
+    margin-left: 5px;
+  }
+  #city h3 {
+    font-size: 20px;
+  }
+  #sup-city {
+    font-size: 0.8rem !important;
+    border-radius: 6px;
+  }
+  #day-night img{
+    width: 20px;
+    height: 20px;
+  }
+  #w-icon {
+    margin: 5px;
+    margin-right: 1rem;
+  }
+  #temp p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 1rem;
+   
+  }
+  #temp .sup-temp {
+    font-size: 16px;
+    
+  }
+  #fact {
+    border-top: 0.5px solid #333;
+    margin: 10px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  #fact img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+  }
+}
