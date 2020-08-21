@@ -33,7 +33,7 @@ i {
  font-family: "SourceSanc-Italic", sans-serif !important;
 }
  *{
-    font-size: 20px;
+    font-size: 18px;
   }
 body {
   font-family: "SourceSanc-Regular", sans-serif !important;
@@ -73,7 +73,7 @@ textarea:active, textarea:focus {
   font-family: "SourceSanc-Regular", sans-serif;
 }
 .main__section {
-  width: 35%;
+  width: 40%;
   height: auto;
   margin: 0 auto;
   padding: 1rem 2rem;
@@ -84,7 +84,7 @@ textarea:active, textarea:focus {
 .header-text {
   margin: 0;
   margin-bottom: 10px;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }
 /* INPUT STYLES */

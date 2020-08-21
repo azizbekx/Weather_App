@@ -5,3 +5,9 @@
 2. Open Browser
 3. Enter Zip code example  94040 - Mountana View
 4. Wath and Enjoy Weather Information in Display 
+
+## Home
+![](Screenshoot/home.png)
+
+## Result
+![](Screenshoot/result.png)

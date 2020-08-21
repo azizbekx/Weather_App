@@ -89,7 +89,7 @@ const updateUI = async () => {
   const request = await fetch(getURL);
   try {
     const jsonWeather = await request.json();
-    var calculateTemp = Math.floor(jsonWeather.temperature) - 273;
+    var calculateTemp = Math.floor(jsonWeather.temperature);
 
     date.innerHTML = jsonWeather.date;
     cityName.innerHTML = `${jsonWeather.cityName}<sup id ="sup-city">${jsonWeather.citySup}</sup>`;
