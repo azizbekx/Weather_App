@@ -7,7 +7,7 @@
 4. Wath and Enjoy Weather Information in Display 
 
 ## Home
-![](Screenshoot/home.png)
+![](Screenshoot/home.PNG)
 
 ## Result
-![](Screenshoot/result.png)
+![](Screenshoot/result.PNG)
